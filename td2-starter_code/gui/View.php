@@ -1,6 +1,4 @@
 <?php
-namespace td2-starter_code\gui;
-
 abstract class View
 {
     protected $title = '';

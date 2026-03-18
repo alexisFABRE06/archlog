@@ -1,5 +1,5 @@
 <?php
-namespace td2-starter_code\control;
+
 class Presenter
 {
     protected $annoncesCheck;
@@ -33,6 +33,21 @@ class Presenter
             $content = '<h1>' . $post['title'] . '</h1>';
             $content .= '<div class="date">' . $post['date'] . '</div>';
             $content .= '<div class="body">' . $post['body'] . '</div>';
+        }
+        return $content;
+    }
+
+    public function getAllAlternanceHTML()
+    {
+        $content = null;
+        if ($this->annoncesCheck->getAnnoncesTxt() != null) {
+            $content = '<h1>Liste des entreprises en alternance</h1><ul>';
+            foreach ($this->annoncesCheck->getAnnoncesTxt() as $post) {
+                $content .= '<li>';
+                $content .= '<a href="/index.php/companyAlternance?id=' . $post['id'] . '">' . $post['title'] . '</a>';
+                $content .= '</li>';
+            }
+            $content .= '</ul>';
         }
         return $content;
     }

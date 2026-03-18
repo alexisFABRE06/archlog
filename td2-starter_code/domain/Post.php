@@ -1,6 +1,5 @@
 <?php
 
-namespace td2-starter_code\domain;
 class Post
 {
     protected $id;

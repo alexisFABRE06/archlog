@@ -1,13 +1,12 @@
 <?php
 
-namespace td2-starter_code\domain;
 class User
 {
     protected $login;
     protected $password;
     protected $name;
     protected $firstName;
-    protected  $date;
+    protected $date;
 
     public function __construct($login, $password)
     {

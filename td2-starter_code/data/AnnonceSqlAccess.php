@@ -1,12 +1,6 @@
 <?php
 
-namespace td2-starter_code\data;
-
-use starter_code\domain\Post;
-use starter_code\service\AnnonceAccessInterface;
-
 include_once "service/AnnonceAccessInterface.php";
-
 include_once "domain/Post.php";
 
 class AnnonceSqlAccess implements AnnonceAccessInterface
@@ -51,5 +45,3 @@ class AnnonceSqlAccess implements AnnonceAccessInterface
         return $post;
     }
 }
-
-?>

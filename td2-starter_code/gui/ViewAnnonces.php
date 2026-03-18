@@ -1,9 +1,6 @@
 <?php
-namespace td2-starter_code\gui;
 
-use td2include_once;
-
-"ViewLogged.php";
+include_once "gui/ViewLogged.php";
 
 class ViewAnnonces extends ViewLogged
 {

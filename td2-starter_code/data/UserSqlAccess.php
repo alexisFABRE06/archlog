@@ -1,12 +1,6 @@
 <?php
 
-namespace td2-starter_code\data;
-
-use starter_code\domain\User;
-use starter_code\service\UserAccessInterface;
-
 include_once "service/UserAccessInterface.php";
-
 include_once "domain/User.php";
 
 class UserSqlAccess implements UserAccessInterface
@@ -30,8 +24,8 @@ class UserSqlAccess implements UserAccessInterface
         $query = 'SELECT * FROM Users WHERE login="' . $login . '" and password="' . $password . '"';
         $result = $this->dataAccess->query($query);
 
-        if ( $row = $result->fetch() )
-            $user = new User( $row['login'] , $row['password'] );
+        if ($row = $result->fetch())
+            $user = new User($row['login'], $row['password']);
 
         $result->closeCursor();
 
@@ -41,12 +35,11 @@ class UserSqlAccess implements UserAccessInterface
     public function createUser($login, $password)
     {
         $query = 'INSERT INTO Users(login, password) VALUES("' . $login . '","'
-            . $password .'")';
+            . $password . '")';
 
         try {
             $this->dataAccess->query($query);
-        }
-        catch ( \PDOException $e){
+        } catch (\PDOException $e) {
             return false;
         }
         return true;

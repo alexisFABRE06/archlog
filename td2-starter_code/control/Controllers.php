@@ -1,5 +1,4 @@
 <?php
-namespace td2-starter_code\control;
 
 class Controllers
 {
