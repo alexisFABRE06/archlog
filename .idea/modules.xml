@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/archlog.iml" filepath="$PROJECT_DIR$/.idea/archlog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/td2-starter_code/.idea/td2.iml" filepath="$PROJECT_DIR$/td2-starter_code/.idea/td2.iml" />
     </modules>
   </component>
 </project>

@@ -5,9 +5,9 @@
 $env = parse_ini_file(__DIR__ . '/.env');
 
 // Configuration de la base de données
-define('DB_HOST', $env['DB_HOST']);
-define('DB_USER', $env['DB_USER']);
-define('DB_PASS', $env['DB_PASSWORD']);
-define('DB_NAME', $env['DB_NAME']);
-define('DB_CHARSET', 'utf8mb4');
+define('DB_HOST', 'mysql-alexs.alwaysdata.net');
+define('DB_USER', 'alexs_annonces');
+define('DB_PASS', 'AlexisTest123');
+define('DB_NAME', 'alexs_annonces_db');
+
 ?>
