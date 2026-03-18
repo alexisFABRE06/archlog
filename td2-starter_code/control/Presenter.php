@@ -24,6 +24,21 @@ class Presenter
         return $content;
     }
 
+    public function getAllAlternanceHTML()
+    {
+        $content = null;
+        if ($this->annoncesCheck->getAnnoncesTxt() != null) {
+            $content = '<h1>Entreprises proposant de l\'alternance</h1>  <ul>';
+            foreach ($this->annoncesCheck->getAnnoncesTxt() as $post) {
+                $content .= ' <li>';
+                $content .= '<a href="/index.php/companyAlternance?id=' . $post['id'] . '">' . $post['title'] . '</a>';
+                $content .= ' </li>';
+            }
+            $content .= '</ul>';
+        }
+        return $content;
+    }
+
     public function getCurrentPostHTML()
     {
         $content = null;
