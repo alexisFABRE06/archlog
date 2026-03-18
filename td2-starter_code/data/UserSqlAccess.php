@@ -1,12 +1,11 @@
 <?php
 
-namespace td2-starter_code\data;
+namespace data;
 
-use starter_code\domain\User;
-use starter_code\service\UserAccessInterface;
-
+use service\UserAccessInterface;
 include_once "service/UserAccessInterface.php";
 
+use domain\User;
 include_once "domain/User.php";
 
 class UserSqlAccess implements UserAccessInterface

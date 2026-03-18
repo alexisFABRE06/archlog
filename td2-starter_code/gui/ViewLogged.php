@@ -1,10 +1,8 @@
 <?php
 
-namespace td2-starter_code\gui;
+namespace gui;
 
-use td2include_once;
-
-"View.php";
+include_once "View.php";
 
 abstract class ViewLogged extends View
 {

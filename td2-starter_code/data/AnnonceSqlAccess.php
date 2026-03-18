@@ -1,12 +1,11 @@
 <?php
 
-namespace td2-starter_code\data;
+namespace data;
 
-use starter_code\domain\Post;
-use starter_code\service\AnnonceAccessInterface;
-
+use service\AnnonceAccessInterface;
 include_once "service/AnnonceAccessInterface.php";
 
+use domain\Post;
 include_once "domain/Post.php";
 
 class AnnonceSqlAccess implements AnnonceAccessInterface

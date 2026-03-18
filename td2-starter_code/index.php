@@ -20,10 +20,10 @@ include_once 'gui/ViewPost.php';
 include_once 'gui/ViewError.php';
 include_once 'gui/ViewCreate.php';
 
-use starter_code\control\{Controllers};
-use starter_code\data\{AnnonceSqlAccess};
-use starter_code\gui\{ViewAnnonces};
-use starter_code\service\{UserChecking};
+use gui\{ViewLogin, ViewAnnonces, ViewPost, ViewError, ViewCreate, Layout};
+use control\{Controllers, Presenter};
+use data\{AnnonceSqlAccess, UserSqlAccess};
+use service\{AnnoncesChecking, UserChecking, UserCreation};
 
 $data = null;
 try {

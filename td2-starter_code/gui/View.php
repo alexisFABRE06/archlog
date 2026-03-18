@@ -1,5 +1,5 @@
 <?php
-namespace td2-starter_code\gui;
+namespace gui;
 
 abstract class View
 {
