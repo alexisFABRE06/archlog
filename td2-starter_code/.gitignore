@@ -1,7 +1,0 @@
-.env*
-!.env.example
-
-.config*
-!.config.example
-
-data/cache_alternance
